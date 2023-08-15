@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="all-cont">
+        <form action="https://httpbin.org/" method="post">
+            <fieldset class="form-field">
+                <legend>Book Information</legend>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+                <label for="pages">Pages</label>
+                <input type="text" id="pages" name="pages">
+                <label id="read-label">Read: </label>
+                    
+                <div class="read-cont">
+                    <input type="radio" id="read-yes" name="readYes" >
+                    <label for="read-yes">YES</label>
+                    
+                    <input type="radio" id="read-no" name="readNo" >
+                    <label for="read-no">NO</label>
+                    
+                    
+                </div>
+                
+                <button type="submit" class="submit-btn">Add book</button>
+            </fieldset>
+        </form>
+        <div class="all-card-cont"></div>
+    </div>
+</body>
+</html>
